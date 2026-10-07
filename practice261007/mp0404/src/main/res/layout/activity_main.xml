@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <!-- 1행: 제목 (2칸 병합) -->
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:text="TableLayout 실습"
+            android:textColor="#8BC34A"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </TableRow>
+
+    <!-- 2행: 거북이 개수 입력 | 거북이 그림 -->
+    <TableRow android:layout_marginTop="24dp">
+        <EditText
+            android:id="@+id/editTextA"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <ImageView
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/turtle" />
+    </TableRow>
+
+    <!-- 3행: 물고기 개수 입력 | 물고기 그림 -->
+    <TableRow android:layout_marginTop="12dp">
+        <EditText
+            android:id="@+id/editTextB"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <ImageView
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/fish" />
+    </TableRow>
+
+    <!-- 4행: 결과보기 버튼 (2칸 병합) -->
+    <TableRow android:layout_marginTop="24dp">
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_span="2"
+            android:onClick="onClickChoice"
+            android:text="결과보기" />
+    </TableRow>
+
+</TableLayout>
