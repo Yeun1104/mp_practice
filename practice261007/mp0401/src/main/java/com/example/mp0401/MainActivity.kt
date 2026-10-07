@@ -16,12 +16,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var ivDiceB: ImageView
     lateinit var etSum: EditText
 
-    // 주사위 이미지 리소스 배열 선언
-    var diceNumber = intArrayOf(
-        R.drawable.dice1, R.drawable.dice2,
+    //주사위 이미지 리소스 배열 선언
+    var diceNumber = intArrayOf(R.drawable.dice1, R.drawable.dice2,
         R.drawable.dice3, R.drawable.dice4,
-        R.drawable.dice5, R.drawable.dice6
-    )
+        R.drawable.dice5, R.drawable.dice6)
 
     var numA = 0
     var numB = 0
@@ -40,16 +38,20 @@ class MainActivity : AppCompatActivity() {
         ivDiceB = findViewById(R.id.imageViewDiceB)
         etSum = findViewById(R.id.editTextSum)
 
-        // 주사위 값 랜덤으로 설정 (1~6)
+        //처음 시작할 때 한 번 굴리기
+        rollDice()
+    }
+
+    //주사위 굴리기: 값 랜덤 설정 + 이미지 변경
+    fun rollDice() {
         numA = (Math.random() * 6).toInt() + 1
         numB = (Math.random() * 6).toInt() + 1
 
-        // 배열 인덱스는 0부터라서 -1
         ivDiceA.setImageResource(diceNumber[numA - 1])
         ivDiceB.setImageResource(diceNumber[numB - 1])
     }
 
-    // 결과보기 버튼 클릭 시 호출 (XML의 android:onClick)
+    //결과보기 버튼
     fun onClickChoice(view: View) {
         val input = etSum.text.toString()
         if (input.isEmpty()) {
@@ -62,5 +64,11 @@ class MainActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "틀렸습니다", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    //섞기 버튼: 주사위 다시 굴리고 입력칸 비우기
+    fun onClickShuffle(view: View) {
+        rollDice()
+        etSum.setText("")
     }
 }

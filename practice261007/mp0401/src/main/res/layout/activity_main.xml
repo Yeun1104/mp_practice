@@ -71,4 +71,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextSum" />
 
+
+    <!-- 섞기 버튼 -->
+    <Button
+        android:id="@+id/buttonShuffle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onClickShuffle"
+        android:text="섞기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonResult" />
 </androidx.constraintlayout.widget.ConstraintLayout>
