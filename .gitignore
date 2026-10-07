@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle / 빌드 결과물
+.gradle/
+.kotlin/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# 내 컴퓨터 SDK 경로
+local.properties
