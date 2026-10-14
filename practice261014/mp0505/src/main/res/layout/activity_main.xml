@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch 실습"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <!-- 창문 장면: 창문 위에 조명과 고양이를 겹침 -->
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="167dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <!-- 창문 -->
+        <ImageView
+            android:id="@+id/imageViewWindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/window" />
+
+        <!-- 조명 (창문 위쪽 가운데) -->
+        <ImageView
+            android:id="@+id/imageViewLight"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="17dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/light31" />
+
+        <!-- 고양이 (창틀 아래쪽, 처음엔 숨김) -->
+        <ImageView
+            android:id="@+id/imageViewCat"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="88dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cat5"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <!-- 스위치 2개 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:text="고양이" />
+
+        <Switch
+            android:id="@+id/switchLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:switchMinWidth="60dp"
+            android:text="라이트"
+            android:thumb="@drawable/off3" />
+    </LinearLayout>
+
+</LinearLayout>
