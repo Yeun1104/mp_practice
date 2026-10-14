@@ -26,3 +26,4 @@ rootProject.name = "practice261014"
 include(":mp0501")
 include(":mp0502")
 include(":mp0503")
+include(":mp0504")
