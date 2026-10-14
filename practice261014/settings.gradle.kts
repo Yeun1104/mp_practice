@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "practice261014"
 include(":mp0501")
+include(":mp0502")
