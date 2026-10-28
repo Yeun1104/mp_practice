@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_init"
+        android:title="초기화" />
+    <item
+        android:id="@+id/menu_up"
+        android:title="정답"
+        app:actionLayout="@layout/yes_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_down"
+        android:title="오답"
+        app:actionLayout="@layout/no_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_close"
+        android:title="종료" />
+</menu>

@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Practice261028" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- 앱 바 없는 테마 그대로 (툴 바를 직접 넣을 거라서) -->
+    <style name="Base.Theme.Mp0705" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/statusBar</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Theme.Practice261028" parent="Base.Theme.Practice261028" />
+    <style name="Theme.Mp0705" parent="Base.Theme.Mp0705" />
 </resources>

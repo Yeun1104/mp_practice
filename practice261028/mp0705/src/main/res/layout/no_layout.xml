@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_layout"
+    android:layout_width="45dp"
+    android:layout_height="match_parent"
+    android:background="?attr/actionBarItemBackground"
+    android:minHeight="?attr/actionBarSize"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/no_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        app:srcCompat="@drawable/no" />
+
+    <TextView
+        android:id="@+id/no_num"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:minWidth="16dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+</FrameLayout>
