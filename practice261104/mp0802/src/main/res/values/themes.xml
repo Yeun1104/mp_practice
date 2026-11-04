@@ -6,4 +6,14 @@
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+    <!-- 시간 선택 대화상자 전용 테마 -->
+    <style name="TimePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#FF8A65</item>
+        <item name="android:windowBackground">#FAC980</item>
+        <item name="android:textColorSecondary">#E91E63</item>
+        <item name="android:textColorPrimary">#888A8A</item>
+        <item name="android:textColorPrimaryInverse">#FFF176</item>
+        <item name="android:textColorSecondaryInverse">#ffffff</item>
+        <item name="colorControlActivated">#2196F3</item>
+    </style>
 </resources>
