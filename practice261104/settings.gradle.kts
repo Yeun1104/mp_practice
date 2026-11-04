@@ -23,7 +23,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "My Application"
-include(":app")
 include(":mp0801")
 include(":mp0802")
 include(":mp0803")
