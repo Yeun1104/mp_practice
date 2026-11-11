@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- 과일 그림 -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1.2"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/fruit1" />
+
+    <!-- 가격 -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        tools:text="30" />
+
+    <!-- + / - 버튼 -->
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/sign_add" />
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/sign_minus" />
+
+    <!-- 수량 -->
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="end"
+        android:text="x 0" />
+
+    <!-- 이 과일 합계 -->
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="end"
+        tools:text="0" />
+
+    <!-- 삭제 버튼 -->
+    <ImageView
+        android:id="@+id/delete_item"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/sign_delete" />
+</LinearLayout>
